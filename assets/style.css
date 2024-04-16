@@ -105,6 +105,11 @@ body {
 	background-color: #BEB45A;
 	border-radius:0 ;
 }
+/* Le code ci dessous gère le lien actif */
+span.nav-link.active-tag {
+	color: #fff;
+	background-color: #BEB45A;
+}
 .nav-pills .nav-link {
 	color: #000
 }

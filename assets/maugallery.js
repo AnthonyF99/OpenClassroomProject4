@@ -143,7 +143,6 @@
       $(".lightboxImage").attr("src", prevImage.attr("src"));
     },
     nextImage() {
-      debugger;
       // Recherche de l'image active
       let activeImage = $(".lightboxImage").attr("src");
     
@@ -244,3 +243,29 @@
     }
   };
 })(jQuery);
+
+// Sélectionner toutes les balises img
+let images = document.querySelectorAll('img');
+
+// Filtrer les images avec une source contenant .jpg ou .jpeg
+let jpgImages = Array.from(images).filter(function(image) {
+    return image.src.toLowerCase().includes('.jpg') || image.src.toLowerCase().includes('.jpeg');
+});
+
+// Récupérer les URLs des images jpg
+let urlsToCache = jpgImages.map(function(image) {
+    return image.src;
+});
+
+// Mise en cache des URLs récupérées
+caches.open('images-cache').then(function(cache) {
+    return Promise.all(
+        urlsToCache.map(function(url) {
+            return cache.add(url);
+        })
+    );
+}).then(function() {
+    console.log('Toutes les images jpg ont été mises en cache avec succès.');
+}).catch(function(error) {
+    console.error('Une erreur est survenue lors de la mise en cache des images jpg:', error);
+});

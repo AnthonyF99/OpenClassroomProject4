@@ -199,6 +199,17 @@
                     </div>
                 </div>
             </div>`);
+    //Le code ci dessous sert au ScreenReader
+    
+    // Sélection de toutes les images dans la galerie
+    let images = gallery.find('img');
+
+    // Gestion de l'événement au clic sur une image
+    images.on('click', function() {
+    let altText = $(this).attr('alt'); // Récupération du texte alternatif de l'image cliquée
+    $('.lightboxImage').attr('alt', altText); // Attribution du texte alternatif à l'image affichée dans la modale
+  });
+
     },
     showItemTags(gallery, position, tags) {
       var tagItems =

@@ -102,13 +102,13 @@ body {
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
 	color: #fff;
-	background-color: #BEB45A;
+	background-color: #5F5926;
 	border-radius:0 ;
 }
 /* Le code ci dessous gère le lien actif */
 span.nav-link.active-tag {
 	color: #fff;
-	background-color: #BEB45A;
+	background-color: #5F5926/*#BEB45A*/;
 }
 .nav-pills .nav-link {
 	color: #000

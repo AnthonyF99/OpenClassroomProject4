@@ -69,6 +69,7 @@ body {
 
 .picture img {
 	width: 100%;
+	height: auto;
 
 }
 #about-me {
@@ -77,13 +78,14 @@ body {
 .about-me__title {
 	margin-top: 1em;
 	margin-bottom: 60px;
-	font-size: 30px;
+	font-size: 25px;
 }
 .about-me__introduction {
 	font-family: 'Spectral';
 	font-weight: 800;
 	font-style: italic;
 	width: 60%;
+	font-size: 1em;
 }
 #about-me p {
 	width: 80%;
@@ -102,8 +104,13 @@ body {
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
 	color: #fff;
-	background-color: #BEB45A;
+	background-color: #5F5926;
 	border-radius:0 ;
+}
+/* Le code ci dessous gère le lien actif */
+span.nav-link.active-tag {
+	color: #fff;
+	background-color: #5F5926/*#BEB45A*/;
 }
 .nav-pills .nav-link {
 	color: #000
@@ -147,7 +154,9 @@ body {
 	font-family: Spectral;
 	font-style: italic;
 	font-weight: 300;
-
+}
+h3.quote__text {
+	font-size: 2em;
 }
 .quote__author {
 	font-family: Spectral;

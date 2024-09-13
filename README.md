@@ -22,4 +22,4 @@ Ce projet vise à optimiser un site de photographe en améliorant les performanc
 ## Comment exécuter le projet
 1. Clonez le dépôt :  
    ```bash
-   git clone https://github.com/username/photographer-optimization.git
+   git clone https://github.com/AnthonyF99/OpenClassroomProject4.git

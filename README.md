@@ -1,6 +1,3 @@
-
-### 3. **README pour le site de photographe (optimisation performance, SEO, accessibilité)**
-
 # Site Photographe - Optimisation Performance, SEO et Accessibilité
 
 ## Description

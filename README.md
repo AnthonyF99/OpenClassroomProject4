@@ -23,3 +23,4 @@ Ce projet vise à optimiser un site de photographe en améliorant les performanc
 1. Clonez le dépôt :  
    ```bash
    git clone https://github.com/AnthonyF99/OpenClassroomProject4.git
+2. Ouvrez index.html dans votre navigateur ou bien lancez live preview sûr vscode.
